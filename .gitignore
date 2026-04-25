@@ -31,7 +31,6 @@ server/api.config.yaml
 utils   
 server/sessions
 server/CLAUDE.md
-server/
 server/workspace
 outputs
 CLAUDE.md
