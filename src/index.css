@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 3% 15%;
+    --foreground: 120 18% 92%;
+
+    --card: 60 3% 17%;
+    --card-foreground: 120 18% 92%;
+
+    --popover: 60 3% 17%;
+    --popover-foreground: 120 18% 92%;
+
+    --primary: 142 72% 45%;
+    --primary-foreground: 120 10% 6%;
+
+    --secondary: 60 3% 19%;
+    --secondary-foreground: 120 18% 92%;
+
+    --muted: 60 3% 21%;
+    --muted-foreground: 120 10% 65%;
+
+    --accent: 142 24% 18%;
+    --accent-foreground: 120 18% 92%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 72% 45%;
+    --success-foreground: 120 10% 6%;
+
+    --warning: 48 96% 52%;
+    --warning-foreground: 120 10% 6%;
+
+    --border: 60 3% 24%;
+    --input: 60 3% 24%;
+    --ring: 142 72% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 60 3% 14%;
+    --sidebar-foreground: 120 18% 92%;
+    --sidebar-primary: 142 72% 45%;
+    --sidebar-primary-foreground: 120 10% 6%;
+    --sidebar-accent: 60 3% 18%;
+    --sidebar-accent-foreground: 120 18% 92%;
+    --sidebar-border: 60 3% 24%;
+    --sidebar-ring: 142 72% 45%;
+
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  .dark {
+    --background: 60 3% 15%;
+    --foreground: 120 18% 92%;
+    --card: 60 3% 17%;
+    --card-foreground: 120 18% 92%;
+    --popover: 60 3% 17%;
+    --popover-foreground: 120 18% 92%;
+    --primary: 142 72% 45%;
+    --primary-foreground: 120 10% 6%;
+    --secondary: 60 3% 19%;
+    --secondary-foreground: 120 18% 92%;
+    --muted: 60 3% 21%;
+    --muted-foreground: 120 10% 65%;
+    --accent: 142 24% 18%;
+    --accent-foreground: 120 18% 92%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 60 3% 24%;
+    --input: 60 3% 24%;
+    --ring: 142 72% 45%;
+    --sidebar-background: 60 3% 14%;
+    --sidebar-foreground: 120 18% 92%;
+    --sidebar-primary: 142 72% 45%;
+    --sidebar-primary-foreground: 120 10% 6%;
+    --sidebar-accent: 60 3% 18%;
+    --sidebar-accent-foreground: 120 18% 92%;
+    --sidebar-border: 60 3% 24%;
+    --sidebar-ring: 142 72% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
